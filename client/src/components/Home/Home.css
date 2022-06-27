@@ -1,0 +1,165 @@
+.background {
+  background: url("https://wallpapercave.com/wp/wp6851476.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.order {
+  flex: 0 0 15%;
+  margin: 7%;
+}
+
+.new {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 3.7rem;
+  font-variant: normal;
+  color: rgb(40, 221, 49);
+  text-shadow: 0 0 5px rgb(201, 221, 22);
+  margin: 0;
+}
+
+.button,
+.button::after {
+  padding: 16px 20px;  
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background: linear-gradient(45deg, transparent 5%, #087d23 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 1;
+  box-shadow: 6px 0px 0px #054246;
+  outline: transparent;
+  position: relative;
+  margin-top: 1.5%;
+}
+
+.button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "CREATE YOUR CRIMINAL";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #88da17 3%,
+    #00e6f6 5%,
+    #0a58a6 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+.cardCreated {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-image: url("C:\Users\fghij\Desktop\RepasoPI-BreakingBad\client\src\components\Home\blue.png");
+  opacity: 0.8;
+  border: 6px solid rgb(34, 129, 7);
+  text-align: center;
+  position: relative;
+  top: 25%;
+  left: 40%;
+}
+
+.inputoxi {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  border: 0.5px solid rgb(10, 10, 10);
+  padding: 0.1rem;
+  background-color: rgb(95, 241, 87);
+}
+
+.div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2.8%;
+}

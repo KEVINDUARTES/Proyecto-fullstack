@@ -1,0 +1,17 @@
+.inputoxix {
+  border-radius: 1rem;
+  border: 0.5px solid rgb(10, 10, 10);
+  padding: 0.1rem;
+  background-color: rgb(87, 233, 241);  
+}
+
+.inputin {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-decoration: dashed;
+  border-radius: 1rem;
+  border: 1.4px solid rgb(10, 10, 10);
+  background-color: rgb(151, 177, 229);
+  margin-bottom: 1.5%;
+}
